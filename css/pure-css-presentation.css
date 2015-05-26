@@ -1,0 +1,518 @@
+/*
+    We start with a good ol' reset.
+    That's the one by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
+    You can probably argue if it is needed here, or not, but for sure it
+    doesn't do any harm and gives us a fresh start.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Ready? This is the only file you're need to start your presentation. Follow along closely */
+
+/* Generic styles */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body {
+  font: 400 16px/normal 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+h1 {
+  font: 600 2.625em/normal 'Open Sans', sans-serif;
+}
+
+p {
+  font: 1.5em/normal 'Raleway', sans-serif;
+  margin: 0 0 20px
+}
+
+ul {
+  list-style: square outside none;
+  font: 1.25em/normal 'Raleway', sans-serif;
+  margin: 10px;
+  padding: 0 0 0 25px;
+}
+
+figure {
+  width: 50%;  
+  max-width: 500px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 0 20px;
+  border: solid 1px #ccc;
+  -moz-box-shadow:    0px 2px 3px 1px #ccc;
+  -webkit-box-shadow: 0px 2px 3px 1px #ccc;
+  box-shadow:         0px 2px 3px 1px #ccc;
+}
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.1em;
+}
+
+a:hover,
+a:focus {
+  background: rgba(255,255,255,1);
+  text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+body {
+  margin:0;
+  padding:0;
+  overflow:hidden;  
+  background-color: #f5f5f5;
+}
+
+.clearfix {
+  clear:both;
+}
+
+/* Presentation */
+.slideshow {
+  height: 100%;
+}
+
+.slide-input {
+  display: none;
+  position:relative;
+  visibility:hidden;
+}
+
+#slide-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  
+  transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+}
+
+.slide-holder {
+  position: relative;
+  float:left;
+  width: 25%;
+  height: 100%;
+}
+
+.slide {
+  position: relative;
+  margin: 40px 60px;
+  padding: 25px 50px;
+  height: 600px;  /* fallback */
+  height: -moz-calc(100% - 80px);
+  height: -webkit-calc(100% - 80px);
+  height: calc(100% - 80px);
+  min-height: 600px;
+
+  /* Presentation box style. Play around to create yours */
+  border: 1px solid #ccc;
+}
+
+.content {
+  transition: all .4s cubic-bezier(0, 1.8, 1, 1.8);
+  -webkit-transition: all .4s cubic-bezier(0, 1.8, 1, 1.8);
+  -moz-transition: all .4s cubic-bezier(0, 1.8, 1, 1.8);
+  -o-transition: all .4s cubic-bezier(0, 1.8, 1, 1.8);
+}
+
+.content h1 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+/* Arrow for navigation Credit: http://codepen.io/eMaj/pen/joLqt modified a bit for use */
+.arrow-container {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  position: absolute;
+  background-color: #f5f5f5;
+  border: solid 1px #ccc;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  top: 50%;
+  -moz-transform: translate(0,-50%);
+  -webkit-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+.arrow-container.left {  
+  left : -35px;
+  right: auto;
+}
+.arrow-container.right {
+  right: -35px;
+  left: auto;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.arrow .curve {
+  position: absolute;
+  overflow: hidden;
+}
+.arrow .curve:before {
+  position: absolute;
+  content: '';
+}
+.arrow:hover:before {
+  background-color: #333;
+}
+.arrow-right:hover:before, .arrow-left:hover:before {
+  background-color: #333;
+}
+.arrow-right:hover:after {
+  border-left-color: #333;
+}
+.arrow-left:hover:after {
+  border-right-color: #333;
+}
+.arrow-left.curve-left:hover .curve:before {
+  border-color: #333;
+}
+.arrow:before, .arrow:after {
+  content: '';
+  border-color: transparent;
+  border-style: solid;
+  position: absolute;
+}
+.arrow-right:before {
+  border: none;
+  background-color: #555;
+  height: 30%;
+  width: 50%;
+  top: 35%;
+  left: 0;
+}
+.arrow-right:after {
+  left: 50%;
+  top: 0;
+  border-width: 20px 20px;
+  border-left-color: #555;
+}
+.arrow-left:before {
+  border: none;
+  background-color: #555;
+  height: 30%;
+  width: 50%;
+  top: 35%;
+  right: 0;
+}
+.arrow-left:after {
+  right: 50%;
+  top: 0;
+  border-width: 20px 20px;
+  border-right-color: #555;
+}
+.arrow-left.curve-left:before {
+  border: none;
+  width: 0;
+  height: 0;
+}
+.arrow-left.curve-left .curve {
+  width: 26px;
+  height: 24px;
+  top: 14px;
+  left: 20px;
+}
+.arrow-left.curve-left .curve:before {
+  -webkit-border-radius: 2000px;
+  -moz-border-radius: 2000px;
+  -ms-border-radius: 2000px;
+  border-radius: 2000px;
+  border: solid 12px #555;
+  width: 16px;
+  height: 28px;
+  top: 0;
+  left: -20px;
+}
+
+/* Presenation flow. Refer to readme on how to add new slides */
+
+input.slide-1-ck:checked ~ #slide-container {
+  left: 0;
+}
+input.slide-2-ck:checked ~ #slide-container {
+  left: -100%;
+}
+input.slide-3-ck:checked ~ #slide-container {
+  left: -200%;
+}
+input.slide-4-ck:checked ~ #slide-container {
+  left: -300%;
+}
+input.slide-5-ck:checked ~ #slide-container {
+  top: -100%;
+}
+input.slide-6-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -100%;
+}
+input.slide-7-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -100%;
+}
+input.slide-8-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -100%;
+}
+input.slide-9-ck:checked ~ #slide-container {
+  left: 0;
+  top: -200%;
+}
+input.slide-10-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -200%;
+}
+input.slide-11-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -200%;
+}
+input.slide-12-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -200%;
+}
+input.slide-13-ck:checked ~ #slide-container {
+  left: 0;
+  top: -300%;
+}
+input.slide-14-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -300%;
+}
+input.slide-15-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -300%;
+}
+input.slide-16-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -300%;
+}
+input.slide-17-ck:checked ~ #slide-container {
+  left: 0;
+  top: -400%;
+}
+input.slide-18-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -400%;
+}
+input.slide-19-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -400%;
+}
+input.slide-20-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -400%;
+}
+input.slide-21-ck:checked ~ #slide-container {
+  left: 0;
+  top: -500%;
+}
+input.slide-22-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -500%;
+}
+input.slide-23-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -500%;
+}
+input.slide-24-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -500%;
+}
+input.slide-25-ck:checked ~ #slide-container {
+  left: 0;
+  top: -600%;
+}
+input.slide-26-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -600%;
+}
+input.slide-27-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -600%;
+}
+input.slide-28-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -600%;
+}
+input.slide-29-ck:checked ~ #slide-container {
+  left: 0;
+  top: -700%;
+}
+input.slide-30-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -700%;
+}
+input.slide-31-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -700%;
+}
+input.slide-32-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -700%;
+}
+input.slide-33-ck:checked ~ #slide-container {
+  left: 0;
+  top: -800%;
+}
+input.slide-34-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -800%;
+}
+input.slide-35-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -800%;
+}
+input.slide-36-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -800%;
+}
+input.slide-37-ck:checked ~ #slide-container {
+  left: 0;
+  top: -900%;
+}
+input.slide-38-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -900%;
+}
+input.slide-39-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -900%;
+}
+input.slide-40-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -900%;
+}
+input.slide-41-ck:checked ~ #slide-container {
+  left: 0;
+  top: -1000%;
+}
+input.slide-42-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -1000%;
+}
+input.slide-43-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -1000%;
+}
+input.slide-44-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -1000%;
+}
+input.slide-45-ck:checked ~ #slide-container {
+  left: 0;
+  top: -1100%;
+}
+input.slide-46-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -1100%;
+}
+input.slide-47-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -1100%;
+}
+input.slide-48-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -1100%;
+}
+input.slide-49-ck:checked ~ #slide-container {
+  left: 0;
+  top: -1200%;
+}
+input.slide-50-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -1200%;
+}
+input.slide-51-ck:checked ~ #slide-container {
+  left: -200%;
+  top: -1200%;
+}
+input.slide-52-ck:checked ~ #slide-container {
+  left: -300%;
+  top: -1200%;
+}
+input.slide-53-ck:checked ~ #slide-container {
+  left: 0;
+  top: -1300%;
+}
+input.slide-54-ck:checked ~ #slide-container {
+  left: -100%;
+  top: -1300%;
+}
+
+/* animation */

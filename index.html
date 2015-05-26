@@ -1,0 +1,1207 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>History of CSS: How we got to where we are today</title>
+    
+    <meta name="description" content="istory of CSS: How we got to where we are today by Darion Miller at Raiz Labs" />
+    <meta name="author" content="Darion Miller - Raiz Labs" />
+
+	  <!-- Fonts - feel free to choose your own at https://www.google.com/fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <link href="css/pure-css-presentation.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <form class="slideshow">
+
+      <!-- Button for each slides of the Presentation -->
+      <input id="slide-1-ck" class="slide-1-ck main-slide slide-input" name="slide" type="radio" checked />
+      <input id="slide-2-ck" class="slide-2-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-3-ck"  class="slide-3-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-4-ck"  class="slide-4-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-5-ck"  class="slide-5-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-6-ck"  class="slide-6-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-7-ck"  class="slide-7-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-8-ck"  class="slide-8-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-9-ck"  class="slide-9-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-10-ck"  class="slide-10-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-11-ck"  class="slide-11-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-12-ck"  class="slide-12-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-13-ck"  class="slide-13-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-14-ck"  class="slide-14-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-15-ck"  class="slide-15-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-16-ck"  class="slide-16-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-17-ck"  class="slide-17-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-18-ck"  class="slide-18-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-19-ck"  class="slide-19-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-20-ck"  class="slide-20-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-21-ck"  class="slide-21-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-22-ck"  class="slide-22-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-23-ck"  class="slide-23-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-24-ck"  class="slide-24-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-25-ck"  class="slide-25-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-26-ck"  class="slide-26-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-27-ck"  class="slide-27-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-28-ck"  class="slide-28-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-29-ck"  class="slide-29-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-30-ck"  class="slide-30-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-31-ck"  class="slide-31-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-32-ck"  class="slide-32-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-33-ck"  class="slide-33-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-34-ck"  class="slide-34-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-35-ck"  class="slide-35-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-36-ck"  class="slide-36-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-37-ck"  class="slide-37-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-38-ck"  class="slide-38-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-39-ck"  class="slide-39-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-40-ck"  class="slide-40-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-41-ck"  class="slide-41-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-42-ck"  class="slide-42-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-43-ck"  class="slide-43-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-44-ck"  class="slide-44-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-45-ck"  class="slide-45-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-46-ck"  class="slide-46-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-47-ck"  class="slide-47-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-48-ck"  class="slide-48-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-49-ck"  class="slide-49-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-50-ck"  class="slide-50-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-51-ck"  class="slide-51-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-52-ck"  class="slide-52-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-53-ck"  class="slide-53-ck main-slide slide-input" name="slide" type="radio" />
+      <input id="slide-54-ck"  class="slide-54-ck main-slide slide-input" name="slide" type="radio" />
+
+      <!-- Presenation -->
+      <div id="slide-container">
+    
+        <!-- Slide 1 -->
+        <section id="slide-1" class="slide-holder">
+        	<div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1 class="introduction-slide">A Brief History of CSS</h1>
+      		      <p class="introduction-slide">How we got to where we are today</p>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-2-ck" class="arrow arrow-right"></label>
+              </div>
+              </div>
+        	</div>
+        </section>
+
+        <!-- Slide 2 -->
+        <section id="slide-2" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1 class="house-keeping">House Keeping</h1>
+                <p class="house-keeping">This presentation will be available at: <a href="darionmiller.com/historyofCSS">darionmiller.com/historyofCSS</a></p>
+                <p class="house-keeping">Open source pure CSS presentation tool: <a href="github.com/findandform/FirstTube">github.com/findandform/first-tube</a></p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-1-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-3-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section id="slide-3" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Who the hell am I?</h1>
+                <figure class="introduction-img">
+                  <img src="img/darion_miller.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-2-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-4-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- Slide 4 -->
+        <section id="slide-4" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <!-- <h1>History and Technology</h1> -->
+                <p class="technology-importance">We must acknowledge &amp; learn the history to pave the future of technology</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-3-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-5-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- Slide 5 -->
+        <section id="slide-5" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+              <h1>Get in my time machine space ship - lets go!</h1>
+                <div class="animation_frame">
+                  <div class="cloud_holder">
+                      <div class="clouds"></div>
+                      <div class="clouds"></div>
+                      <div class="clouds"></div>
+                      <div class="clouds"></div>
+                  </div>
+                  <div class="spaceship">
+                      <div class="grey_handler">
+                          <div class="glass">
+                            <span></span>
+                            <span></span>
+                          </div>
+                      </div>
+                      <div class="beam"></div>
+                  </div>
+                  <div class="human">
+                      <div class="body">
+                          <div class="head"></div>
+                          <div class="stomach">
+                              <div class="hands">
+                                <span></span>
+                                <span></span>
+                              </div>
+                          </div>
+                          <div class="legs">
+                            <span></span>
+                            <span></span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-4-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-6-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 6 -->
+        <section id="slide-6" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <p class="technology-importance">1994</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-5-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-7-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 7 -->
+        <section id="slide-7" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>You might have looked like this...</h1>
+                <figure class="single-image">
+                  <img src="img/1994/10338836_10100205702687287_2105159295411591763_n.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-6-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-8-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 8 -->
+        <section id="slide-8" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>You probably played this</h1>
+                <figure class="single-image">
+                  <img src="img/1994/9042704.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-7-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-9-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 9 -->
+        <section id="slide-9" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Your phones looked like this</h1>
+                <figure class="single-image">
+                  <img src="img/1994/enhanced-buzz-29243-1389111499-15.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-8-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-10-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Slide 10 -->
+        <section id="slide-10" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Your computer looked like this</h1>
+                <figure class="single-image">
+                  <img src="img/1994/MG_7311typewriter.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-9-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-11-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 11 -->
+        <section id="slide-11" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>The "UI" for your computer looked like this</h1>
+                <figure class="single-image">
+                  <img src="img/1994/in-1994-most-people-used-windows-pcs-windows-looked-like-this.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-10-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-12-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 12 -->
+        <section id="slide-12" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Yahoo! was founded</h1>
+                <figure class="single-image">
+                  <img src="img/1994/1994-was-also-the-year-yahoo-was-founded-this-is-what-its-web-page-looked-like.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-11-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-13-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 13 -->
+        <section id="slide-13" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Say what again..</h1>
+                <figure class="single-image">
+                  <img src="img/1994/pulp_fiction_1994.jpeg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-12-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-14-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 14 -->
+        <section id="slide-14" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Birth of the web</h1>
+                  <figure class="single-image">
+                    <img src="img/1994/section_5/berners-lee.jpg">
+                  </figure>
+                  <p class="single-text">Tim Bernest-Lee invited the internet around 1989</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-13-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-15-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 15 -->
+        <section id="slide-15" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Not this guy</h1>
+                  <figure class="single-image">
+                    <img src="img/1994/section_5/al-gore.jpg">
+                  </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-14-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-16-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 16 -->
+        <section id="slide-16" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Håkon Wium Lie to the rescue!</h1>
+                  <figure class="single-image">
+                    <img src="img/1994/section_5/creative-web-02-html-css-basics-13-638.jpg">
+                  </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-15-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-17-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 17 -->
+        <section id="slide-17" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>October 13 1994 - Marc Andreessen</h1>
+                  <figure class="single-image">
+                    <img src="img/1994/section_5/ns404.png">
+                  </figure>
+                  <p>Announced to www-talk that the first beta release of Mozilla (which later turned into Netscape Navigator) was available for testing.</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-16-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-18-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 18 -->
+        <section id="slide-18" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <p class="technology-importance">1996</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-17-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-19-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 19 -->
+        <section id="slide-19" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Backrub! errr... Google was founded</h1>
+                <figure class="single-image">
+                  <img src="img/1996/Google_backrub.png">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-18-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-20-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 20 -->
+        <section id="slide-20" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>MySpace?</h1>
+                <figure class="single-image">
+                  <img src="img/1996/myspace_1996.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-19-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-21-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 21 -->
+        <section id="slide-21" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>The apple falls from the tree</h1>
+                <figure class="single-image">
+                  <img src="img/1996/apple1996.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-20-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-22-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 22 -->
+        <section id="slide-22" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Our lives changed</h1>
+                <figure class="single-image">
+                  <img src="img/1996/Tomb-Raider-original-game.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-21-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-23-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 23 -->
+        <section id="slide-23" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <p class="technology-importance">CSS1 is officially released.</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-22-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-24-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 24 -->
+        <section id="slide-24" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>CSS1 core features</h1>
+                <ul class="single-list">
+                  <li>Font properties such as typeface</li>
+                  <li>Color of text, backgrounds</li>
+                  <li>Text attributes – spacing between words, letters, and lines of text</li>
+                  <li>Alignment of text, images, tables and other elements</li>
+                  <li>Margin, border, padding, and positioning for most elements</li>
+                  <li>Unique identification and generic classification of groups of attributes</li>
+                </ul>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-23-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-25-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 25 -->
+        <section id="slide-25" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <p class="technology-importance">Microsoft IE 3 - released in August 1996 was the first commercial browser to support CSS.</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-24-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-26-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 26 -->
+        <section id="slide-26" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Bugs are a plenty</h1>
+                <figure class="single-image">
+                  <img src="img/1996/W3C_and_Internet_Explorer_box_models.png">
+                </figure>
+              <div class="arrow-container left">
+                <label for="slide-25-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-27-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 27 -->
+        <section id="slide-27" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <p class="technology-importance">Netscapes Navigator Version 4 starts to implement CSS1....sorta</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-26-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-28-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 28 -->
+        <section id="slide-28" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>JSSS - JavaScript Style Sheets</h1>
+                <p class="center-with-h1">h1 { font-size: 20px;} = document.tags.H1.fontSize = "20pt";</p>
+              <div class="arrow-container left">
+                <label for="slide-27-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-29-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- Slide 29 -->
+        <section id="slide-29" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Opera</h1>
+                <p class="technology-importance">Very small, and mostly lead by Geir Ivarsøy Opera really dominated in integrating CSS1. They even found the time to test it!</p>
+              <div class="arrow-container left">
+                <label for="slide-28-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-30-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 30 -->
+        <section id="slide-30" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <p class="technology-importance">1998</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-29-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-31-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- Slide 31 -->
+        <section id="slide-31" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>iMac Introduced</h1>
+                <figure class="single-image">
+                  <img src="img/1998/imac_three_quarter_large.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-30-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-32-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 32 -->
+        <section id="slide-32" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>MySQL Released</h1>
+                <figure class="single-image">
+                  <img src="img/1998/mysql_logo.png">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-31-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-33-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 33 -->
+        <section id="slide-33" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>AOL buys Netscape Communications</h1>
+                <figure class="single-image">
+                  <img src="img/1998/AOL011.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-32-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-34-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 34 -->
+        <section id="slide-34" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Microsoft fucks up</h1>
+                <figure class="single-image">
+                  <img src="img/1998/Windows_9X_BSOD.png">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-33-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-35-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 35 -->
+        <section id="slide-35" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Mozilla launches</h1>
+                <figure class="single-image">
+                  <img src="img/1998/mozilla1998.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-34-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-36-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 36 -->
+        <section id="slide-36" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <p class="technology-importance">CSS 2 released November 24th 1998</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-35-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-37-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 37 -->
+        <section id="slide-37" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <h1>CSS2 core features</h1>
+                <ul class="single-list">
+                  <li>Absolute, relative and fixed positioning of elements and z-index</li>
+                  <li>The "concept" of media types</li>
+                  <li>Support for aural style sheets and bidirectional text</li>
+                  <li>New font properties such as shadow</li>
+                  <li>Host of other features</li>
+                </ul>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-36-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-38-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 38 -->
+        <section id="slide-38" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <p class="technology-importance">Opps, they did it again....</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-37-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-39-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 39-->
+        <section id="slide-39" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <p class="technology-importance">NBD here is 2.1 guys</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-38-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-40-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 40 -->
+        <section id="slide-40" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <p class="technology-importance">1999-Present</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-39-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-41-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 41 -->
+        <section id="slide-41" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>RIM introduces this monster</h1>
+                <figure class="single-image">
+                  <img src="img/1999-present/blackberry950crop.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-40-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-42-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 42 -->
+        <section id="slide-42" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Matrix is released in theaters</h1>
+                <figure class="single-image">
+                  <img src="img/1999-present/pelicula-vhs-matrix-3767-MLM69465955_4425-F.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-41-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-43-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 43 -->
+        <section id="slide-43" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>The day I stopped seeing the sun</h1>
+                <figure class="single-image">
+                  <img src="img/1999-present/eq1999.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-42-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-44-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 44 -->
+        <section id="slide-44" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Microsoft released IE 5.0 and it looks the same</h1>
+                <figure class="single-image">
+                  <img src="img/1999-present/ie5-3.gif">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-43-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-45-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 45 -->
+        <section id="slide-45" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Star Wars Episode I is released</h1>
+                <figure class="single-image">
+                  <img src="img/1999-present/episode_1.jpg">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-44-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-46-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 46 -->
+        <section id="slide-46" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <p class="technology-importance">CSS 3 released</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-45-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-47-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 47 -->
+        <section id="slide-47" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <h1>Browser wars start to heat up</h1>
+                  <figure class="single-image">
+                  <img src="img/1999-present/browser_wars.png">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-46-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-48-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 48 -->
+        <section id="slide-48" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <div class="mario">
+                    <div class="hat-head"></div>
+                    <div class="hat-logo"></div>
+                    <div class="hat-brim"></div>
+                    
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                    
+                    <div class="head">
+                      <div class="eyebrow left"></div>
+                      <div class="eyebrow right"></div>
+                      
+                      <div class="moustache"></div>
+                      
+                      <div class="eye left"></div>
+                      <div class="eye right"></div>
+                      
+                      <div class="nose"></div>
+                    </div>
+                  </div>
+
+
+                  <div class="luigi">
+                    <div class="hat-head"></div>
+                    <div class="hat-logo"></div>
+                    <div class="hat-brim"></div>
+                    
+                    <div class="ear left"></div>
+                    <div class="ear right"></div>
+                    
+                    <div class="head">
+                      <div class="eyebrow left"></div>
+                      <div class="eyebrow right"></div>
+                      
+                      <div class="moustache"></div>
+                      
+                      <div class="eye left"></div>
+                      <div class="eye right"></div>
+                      
+                      <div class="nose"></div>
+                    </div>
+                  </div>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-47-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-49-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 49 -->
+        <section id="slide-49" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <h1>Media Queries</h1>
+                  <figure class="single-image">
+                  <img src="img/1999-present/media_queries_css.png">
+                </figure>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-48-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-50-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 50 -->
+        <section id="slide-50" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <h1>CSS Frameworks</h1>
+                  <ul class="single-list">
+                  <li>Twitter Bootstrap - 2011 Mark Otto and Jacob Thornton</li>
+                  <li>Foundation by Zurb</li>
+                  <li>Sematic UI</li>
+                  <li>Pure by Yahoo!</li>
+                  <li>Many others...</li>
+                </ul>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-49-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-51-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 51 -->
+        <section id="slide-51" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <h1>CSS Grids - YAML</h1>
+                  <ul class="single-list">
+                  <li>Yet another multicolumn layout</li>
+                  <li>Allows design grids to mimic development grids</li>
+                  <li>Makes responsive design easier</li>
+                  <li>Allows designs to be semantic and easy to scale</li>
+                  <li>Super light weight at only ~4.6KM</li>
+                </ul>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-50-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-52-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 52 -->
+        <section id="slide-52" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <h1>CSS Compilers</h1>
+                  <ul class="single-list">
+                  <li>LESS</li>
+                  <li>SAAS</li>
+                  <li>SCSS</li>
+                </ul>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-51-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-53-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+         <!-- Slide 53 -->
+        <section id="slide-53" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                  <p class="technology-importance">CSS4 and beyond....</p>
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-52-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right">
+                <label for="slide-54-ck" class="arrow arrow-right"></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final Slide -->
+        <section id="slide-54" class="slide-holder">
+          <div class="main-slide slide">
+            <div class="front-slide">
+              <div class="content">
+                <h1>Welcome Back!</h1>
+                <p class="technology-importance">Thank you!</p>
+                <p class="house-keeping">This presentation will be available at: <a href="darionmiller.com/historyofCSS">darionmiller.com/historyofCSS</a></p>
+                <p class="house-keeping">Open source pure CSS presentation tool: <a href="github.com/findandform/FirstTube">github.com/findandform/first-tube</a></p>
+                back-to-the-future-delorean.jpg
+              </div>
+              <div class="arrow-container left">
+                <label for="slide-52-ck" class="arrow arrow-left"></label>
+              </div>
+              <div class="arrow-container right arrow-animation">
+                <label for="slide-1-ck" class="arrow arrow-left curve-left"><span class="curve"></span></label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </form>
+  </body>
+</html>

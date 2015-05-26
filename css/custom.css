@@ -1,0 +1,801 @@
+/* Place all your custom styles in here for your presentation */
+
+.single-image{
+	margin-top: 50px;
+	margin-left: 280px;
+	vertical-align: middle;
+	max-height: 450px;
+	width: 600px;
+	height: auto;
+}
+
+p.single-text{
+	text-align: center;
+}
+
+/* Slide 1 - Introduction Slide */
+
+h1.introduction-slide{
+	vertical-align: middle;
+	padding-top: 200px;
+}
+
+p.introduction-slide {
+	 text-align: center;
+}
+
+/* Slide 2 - House Keeping */
+
+h1.house-keeping{
+	margin-bottom: 200px;
+}
+
+p.house-keeping{
+	text-align: center;
+}
+
+ul.single-list{
+	text-align: center;
+	vertical-align: middle;
+	list-style: none;
+  margin-top: 130px;
+  font-size: 32px;
+}
+
+.center-with-h1{
+	vertical-align: middle;
+	padding-top: 170px;
+	text-align: center;
+	font-size: 46px;
+}
+/* Slide 3 - who am I */
+
+.introduction-img{
+	margin-left: 300px;
+	vertical-align: middle;
+	height: 450px;
+	width: 450px;
+}
+
+/* Slide 4 - importance of technology */
+
+.technology-importance{
+	vertical-align: middle;
+	padding-top: 240px;
+	text-align: center;
+	font-size: 46px;
+}
+
+/* Slide 5 Space ship Credit to: http://codepen.io/TravisK/pen/FiHvl*/
+
+		.animation_frame {
+		    background: linear-gradient(to bottom, #a0dae6 0%, #a0dae6 500px, #4cac63 500px, #4cac63 100%);
+		    height: 475px;
+		    width: 800px;
+		    margin: auto;
+		    overflow: hidden;
+		    position: relative;
+		    border: 5px solid #515151;
+		    top: 5px;
+		}
+
+		.clouds {
+		    background: #fff;
+		    width: 180px;
+		    height: 50px;
+		    border-radius: 180px;
+		    position: absolute;
+		    top: 100px;
+		    -webkit-animation: move_clouds 10s infinite linear;
+		    animation: move_clouds 10s infinite linear;
+		}
+		.clouds:before, .clouds:after {
+		    content:"";
+		    position: absolute;
+		    background: #fff;
+		    width: 100px;
+		    height: 60px;
+		    top: -25px;
+		    left: 15px;
+		    border-radius: 80px;
+		    -webkit-transform: rotate(30deg);
+		    transform: rotate(30deg);
+		}
+		.clouds:after {
+		    height: 120px;
+		    width: 120px;
+		    top: -55px;
+		    left: auto;
+		    right: 15px;
+		}
+		@-webkit-keyframes move_clouds {
+		    0% {
+		        left: -100%;
+		    }
+		    100% {
+		        left: 100%;
+		    }
+		}
+
+		@keyframes move_clouds {
+		    0% {
+		        left: -100%;
+		    }
+		    100% {
+		        left: 100%;
+		    }
+		}
+		.cloud_holder div:nth-of-type(1) {
+			-webkit-animation-delay: -1s;
+		    animation-delay: -1s;
+		    top: 150px;
+		}
+		.cloud_holder div:nth-of-type(2) {
+			-webkit-animation-delay: -3s;
+		    animation-delay: -3s;
+		    top: 180px;
+		    opacity: .6;
+		}
+		.cloud_holder div:nth-of-type(3) {
+			-webkit-animation-delay: -5s;
+		    animation-delay: -5s;
+		    top: 50px;
+		}
+		.cloud_holder div:nth-of-type(4) {
+		    -webkit-animation-delay: -7s;
+		    animation-delay: -7s;
+		    opacity: .8;
+		}
+
+		.spaceship {
+		    position: absolute;
+		    height: 120px;
+		    width: 230px;
+		    left: -250px;
+		    margin-left: -100px;
+		    -webkit-animation: motion 15s 1 linear;
+		    animation: motion 15s 1 linear;
+		    -webkit-animation-fill-mode: forwards;
+		    animation-fill-mode: forwards;
+		}
+		@-webkit-keyframes motion {
+		    20% {
+		        left: 50%;
+		    }
+		    80% {
+		        left: 50%;
+		    }
+		    100% {
+		        left: 150%;
+		    }
+		}
+		@keyframes motion {
+		    20% {
+		        left: 50%;
+		    }
+		    80% {
+		        left: 50%;
+		    }
+		    100% {
+		        left: 150%;
+		    }
+		}
+		.grey_handler {
+		    height: 120px;
+		    width: 230px;
+		    border: 5px solid #5A5C57;
+		    position: absolute;
+		    border-radius: 50%;
+		    background: radial-gradient(ellipse at center, #bfbfbf 0%, #74756f 100%);
+		    top: 60px;
+		    z-index: 1;
+		}
+		.glass {
+		    border: 5px solid #7A797A;
+		    height: 90px;
+		    position: absolute;
+		    top: -20px;
+		    width: 150px;
+		    left: 50%;
+		    margin-left: -80px;
+		    border-radius: 50%;
+		    background: radial-gradient(ellipse at center, #ffffff 0%, #e5e5e5 100%);
+		}
+		.glass span, .glass span:after, .glass span:before {
+		    position: absolute;
+		    height: 10px;
+		    width: 10px;
+		    background: #eee;
+		    border-radius: 50%;
+		    box-shadow: 0 0 0 transparent;
+		    -webkit-animation: glow_bulbs 1s infinite linear;
+		    animation: glow_bulbs 1s infinite linear;
+		}
+		.glass span:before, .glass span:after {
+		    content:"";
+		}
+		.glass span:nth-of-type(1) {
+		    bottom: 10px;
+		    left: -20px;
+		}
+		.glass span:nth-of-type(1):before {
+		    bottom: -30px;
+		    left: 30px;
+		}
+		.glass span:nth-of-type(1):after {
+		    bottom: -40px;
+		    left: 90px;
+		}
+		.glass span:nth-of-type(2) {
+		    bottom: 10px;
+		    right: -20px;
+		}
+		.glass span:nth-of-type(2):before {
+		    bottom: -30px;
+		    right: 30px;
+		}
+		@-webkit-keyframes glow_bulbs {
+		    50% {
+		        box-shadow: 0 0 12px #fff;
+		    }
+		}
+		@keyframes glow_bulbs {
+		    50% {
+		        box-shadow: 0 0 12px #fff;
+		    }
+		}
+		.beam {
+		    width: 50px;
+		    height: 0;
+		    border-bottom:400px solid rgba(255, 250, 0, .5);
+		    border-left: 50px solid transparent;
+		    border-right: 50px solid transparent;
+		    left: 50%;
+		    margin-left: -70px;
+		    position: absolute;
+		    bottom: -450px;
+		    opacity: 0;
+		    -webkit-animation: beamer 7s 1 linear;
+		    -webkit-animation-delay: 3s;
+		    animation: beamer 7s 1 linear;
+		    animation-delay: 3s;
+		}
+		@-webkit-keyframes beamer {
+		    10% {
+		        opacity: 1;
+		    }
+		    100% {
+		        opacity: 1;
+		    }
+		}
+		@keyframes beamer {
+		    10% {
+		        opacity: 1;
+		    }
+		    100% {
+		        opacity: 1;
+		    }
+		}
+		.body {
+		    width: 24px;
+		    position: absolute;
+		    left: 50%;
+		    bottom: 100px;
+		    -webkit-animation: fly 5s 1 linear;
+		    -webkit-animation-delay: 4s;
+		    -webkit-animation-fill-mode: forwards;
+		    animation: fly 5s 1 linear;
+		    animation-delay: 4s;
+		    animation-fill-mode: forwards;
+		}
+		@-webkit-keyframes fly {
+		    0% {
+		        -webkit-transform: rotate(20deg);
+		    }
+		    30% {
+		        -webkit-transform: rotate(60deg);
+		    }
+		    60% {
+		        -webkit-transform: rotate(0deg);
+		    }
+		    80% {
+		        -webkit-transform: rotate(-20deg);
+		    }
+		    99% {
+		        bottom: 80%;
+		        opacity: 1;
+		    }
+		    100% {
+		        bottom: 80%;
+		        opacity: 0;
+		    }
+		}
+		@keyframes fly {
+		    0% {
+		        transform: rotate(20deg);
+		    }
+		    30% {
+		        transform: rotate(60deg);
+		    }
+		    60% {
+		        transform: rotate(0deg);
+		    }
+		    80% {
+		        transform: rotate(-20deg);
+		    }
+		    99% {
+		        bottom: 80%;
+		        opacity: 1;
+		    }
+		    100% {
+		        bottom: 80%;
+		        opacity: 0;
+		    }
+		}
+		.head {
+		    height: 15px;
+		    width: 15px;
+		    background: #000;
+		    border-radius: 50%;
+		    left: 50%;
+		    margin-left: -7px;
+		    position: relative;
+		}
+		.stomach {
+		    height: 40px;
+		    width: 20px;
+		    background: #000;
+		    position: relative;
+		    left: 2px;
+		}
+		.legs {
+		    position: relative;
+		}
+		.legs span {
+		    height: 30px;
+		    width: 5px;
+		    background: #000;
+		    position: absolute;
+		    top: -3px;
+		}
+		.legs span:nth-of-type(1) {
+			-webkit-transform: rotate(20deg);
+		    transform: rotate(20deg);
+		    left: 2px;
+		}
+		.legs span:nth-of-type(2) {
+			-webkit-transform: rotate(-20deg);
+		    transform: rotate(-20deg);
+		    right: 2px;
+		}
+		.legs span:nth-of-type(1):before,
+		.legs span:nth-of-type(2):after {
+			content:"";
+		    height: 5px;
+		    width: 10px;
+		    background: #000;
+		    position: absolute;
+		    bottom: 0;
+		}
+		.legs span:nth-of-type(1):before {
+		    border-radius: 40% 20% 20% 40%/20% 20% 50% 50%;
+		    right: 0;
+		}
+		.legs span:nth-of-type(2):after {
+		    border-radius: 20% 40% 40% 20%/50% 50% 20% 20%;
+		}
+		.hands span {
+		    height: 30px;
+		    width: 5px;
+		    background: #000;
+		    position: absolute;
+		    top: -15px;
+		    border-radius: 10px 10px 0 0;
+		}
+		.hands span:nth-of-type(1):after,
+		.hands span:nth-of-type(1):before,
+		.hands span:nth-of-type(2):after,
+		.hands span:nth-of-type(2):before {
+			content:"";
+		    height: 5px;
+		    width: 10px;
+		    border-radius: 50%;
+		    position: absolute;
+		    background: #000;
+		    top: 3px;
+		}
+
+		.hands span:nth-of-type(1) {
+		    left: -5px;
+		    -webkit-transform: rotate(-30deg);
+		    transform: rotate(-30deg);
+		}
+		.hands span:nth-of-type(1):after,
+		.hands span:nth-of-type(2):after {
+		    -webkit-transform: rotate(-30deg);
+		    transform: rotate(-30deg);
+		}
+		.hands span:nth-of-type(1):before,
+		.hands span:nth-of-type(2):before {
+		    left: -5px;
+		    -webkit-transform: rotate(30deg);
+		    transform: rotate(30deg);
+		}
+		.hands span:nth-of-type(2) {
+		    right: -5px;
+		    -webkit-transform: rotate(30deg);
+		    transform: rotate(30deg);
+		}
+
+/* Slide 6 - 1994 */
+
+/*All CSS examples*/
+.mario, .luigi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mario {
+  margin-top: -1em;
+  margin-left: -25%;
+}
+.mario .hat-head {
+  height: 15em;
+  width: 15em;
+  background: #E83736;
+  border-radius: 40%;
+  transform: rotate(42.5deg) skew(0deg, 5deg) scale(0.95, 0.95);
+}
+.mario .hat-logo {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  width: 3.75em;
+  height: 3.75em;
+  margin-left: -1.875em;
+  line-height: 3em;
+  text-align: center;
+  background: #FFF;
+  border-radius: 50%;
+}
+.mario .hat-logo:before {
+  content: 'M';
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  color: #E83736;
+}
+.mario .hat-brim {
+  position: absolute;
+  top: 4.8125em;
+  left: 50%;
+  height: 12em;
+  width: 12em;
+  margin-left: -6em;
+  border-radius: 50%;
+  background: #BD2B2D;
+  transform: scale(1, 1.1);
+  box-shadow: 0 -1em 0 0 #FA5B59;
+}
+.mario .ear {
+  position: absolute;
+  top: 10.5em;
+  height: 4.25em;
+  width: 4.25em;
+  border-radius: 50%;
+  background: linear-gradient(#FFCBBD 30%, #EEA790 30%);
+}
+.mario .ear.left {
+  left: 0;
+}
+.mario .ear.right {
+  right: 0;
+}
+.mario .head {
+  position: absolute;
+  top: 5.3125em;
+  left: 50%;
+  height: 12.25em;
+  width: 12.25em;
+  margin-left: -6.125em;
+  border-radius: 50%;
+  border-color: transparent;
+  background: #F5B097;
+  box-shadow: inset 0 -2.25em 0 #D4917E;
+}
+.mario .eyebrow {
+  position: absolute;
+  top: 0.5em;
+  height: 5em;
+  width: 3.375em;
+  border-radius: 50%;
+  background: #343235;
+}
+.mario .eyebrow:before {
+  content: '';
+  position: absolute;
+  top: 1em;
+  height: 100%;
+  width: 120%;
+  border-radius: 50%;
+  background: #F5B097;
+}
+.mario .eyebrow.left {
+  left: 2em;
+  transform: rotate(-10deg);
+}
+.mario .eyebrow.left:before {
+  left: -20%;
+}
+.mario .eyebrow.right {
+  right: 2em;
+  transform: rotate(10deg);
+}
+.mario .eyebrow.right:before {
+  righT: -20%;
+}
+.mario .moustache {
+  position: absolute;
+  top: 6.5em;
+  left: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  margin-left: -1.25em;
+  border-radius: 50%;
+  background: #343235;
+  box-shadow: -3.75em -0.5em 0 #343235, -2.75em 0.75em 0 #343235, -1.2em 1.5em 0 #343235, 0 0.5em 0 #343235, 1.2em 1.5em 0 #343235, 2.75em 0.75em 0 #343235, 3.75em -0.5em 0 #343235;
+}
+.mario .moustache:after {
+  content: '';
+  position: absolute;
+  top: -3.5em;
+  left: 50%;
+  height: 5em;
+  width: 10em;
+  margin-left: -5em;
+  border-radius: 50%;
+  background: #F5B097;
+}
+.mario .eye {
+  position: absolute;
+  top: 2.375em;
+  height: 4em;
+  width: 2.5em;
+  border-radius: 50%;
+  background: linear-gradient(#E6D9D6 50%, #F9ECE8 50%);
+  overflow: hidden;
+}
+.mario .eye:before {
+  content: '';
+  position: absolute;
+  top: 1.31em;
+  height: 2.125em;
+  width: 1.31em;
+  border-radius: 50%;
+  background: #062226;
+}
+.mario .eye.left {
+  left: 2.75em;
+}
+.mario .eye.left:before {
+  right: -0.2em;
+  transform: rotate(5deg);
+}
+.mario .eye.right {
+  right: 2.75em;
+}
+.mario .eye.right:before {
+  left: -0.2em;
+  transform: rotate(-5deg);
+}
+.mario .nose {
+  position: absolute;
+  top: 4.875em;
+  left: 50%;
+  height: 4em;
+  width: 4.75em;
+  margin-left: -2.375em;
+  border-radius: 50%;
+  background: #E46061;
+  overflow: hidden;
+}
+.mario .nose:before {
+  content: '';
+  position: absolute;
+  top: -0.5em;
+  left: 50%;
+  height: 2.5em;
+  width: 4.5em;
+  margin-left: -2.25em;
+  border-radius: 40%;
+  background: #FA5B59;
+}
+
+.luigi {
+  transform: translate(-50%, -50%) scale(0.9, 0.9);
+  margin-top: -1em;
+  margin-left: 25%;
+}
+.luigi .hat-head {
+  height: 15em;
+  width: 15em;
+  background: #00A652;
+  border-radius: 40%;
+  transform: rotate(58deg) skew(22.5deg, -10deg);
+}
+.luigi .hat-logo {
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  width: 3.75em;
+  height: 3.75em;
+  margin-left: -1.875em;
+  line-height: 3em;
+  text-align: center;
+  background: #FFF;
+  border-radius: 50%;
+}
+.luigi .hat-logo:before {
+  content: 'L';
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  color: #008641;
+}
+.luigi .hat-brim {
+  position: absolute;
+  top: 2.8125em;
+  left: 50%;
+  height: 12em;
+  width: 12em;
+  margin-left: -6em;
+  border-radius: 50%;
+  background: #008641;
+  transform: scale(1, 1.1);
+  box-shadow: 0 -1em 0 0 #63BF72;
+}
+.luigi .ear {
+  position: absolute;
+  top: 10.5em;
+  height: 4.25em;
+  width: 4.25em;
+  border-radius: 50%;
+  background: linear-gradient(#FFCBBD 45%, #EEA790 45%);
+}
+.luigi .ear.left {
+  left: 0;
+}
+.luigi .ear.right {
+  right: 0;
+}
+.luigi .head {
+  position: absolute;
+  top: 3.3125em;
+  left: 50%;
+  height: 12.25em;
+  width: 11.25em;
+  margin-left: -5.625em;
+  border-radius: 50%;
+  border-color: transparent;
+  background: #F5B097;
+}
+.luigi .head:before {
+  content: '';
+  position: absolute;
+  top: 4em;
+  left: 50%;
+  height: 10em;
+  width: 15em;
+  margin-left: -7.5em;
+  border-radius: 50%;
+  background: linear-gradient(122deg, #F5B097 50%, #CF927F 50%);
+  transform: rotate(75deg) skew(20deg, 0deg);
+}
+.luigi .eyebrow {
+  position: absolute;
+  top: 0.25em;
+  height: 5em;
+  width: 3em;
+  border-radius: 50%;
+  background: #343235;
+}
+.luigi .eyebrow:before {
+  content: '';
+  position: absolute;
+  top: 1.2em;
+  height: 100%;
+  width: 120%;
+  border-radius: 50%;
+  background: #F5B097;
+}
+.luigi .eyebrow.left {
+  left: 1.75em;
+}
+.luigi .eyebrow.left:before {
+  left: 0;
+}
+.luigi .eyebrow.right {
+  right: 1.75em;
+}
+.luigi .eyebrow.right:before {
+  right: 0;
+}
+.luigi .moustache {
+  position: absolute;
+  top: 6.5em;
+  left: 50%;
+  height: 5.5em;
+  width: 6em;
+  margin-left: -3em;
+  border-radius: 50%;
+  background: #343235;
+  box-shadow: -2.25em 1em 0 #343235, 2.25em 1em 0 #343235;
+}
+.luigi .moustache:after {
+  content: '';
+  position: absolute;
+  top: -1.5em;
+  left: 50%;
+  height: 5em;
+  width: 10em;
+  margin-left: -5em;
+  border-radius: 50%;
+  background: #F5B097;
+}
+.luigi .eye {
+  position: absolute;
+  top: 3em;
+  height: 5em;
+  width: 2.5em;
+  border-radius: 50%;
+  background: linear-gradient(#E6D9D6 50%, #F9ECE8 50%);
+  overflow: hidden;
+}
+.luigi .eye:before {
+  content: '';
+  position: absolute;
+  top: 1.75em;
+  height: 2.5em;
+  width: 1.31em;
+  border-radius: 50%;
+  background: #062226;
+}
+.luigi .eye.left {
+  left: 2.25em;
+  transform: rotate(2deg);
+}
+.luigi .eye.left:before {
+  right: -0.2em;
+}
+.luigi .eye.right {
+  right: 2.25em;
+  transform: rotate(-2deg);
+}
+.luigi .eye.right:before {
+  left: -0.2em;
+}
+.luigi .nose {
+  position: absolute;
+  top: 6.5em;
+  left: 50%;
+  height: 4.5em;
+  width: 4.75em;
+  margin-left: -2.375em;
+  border-radius: 50%;
+  background: #E46061;
+  overflow: hidden;
+}
+.luigi .nose:before {
+  content: '';
+  position: absolute;
+  top: -0.5em;
+  left: 50%;
+  height: 3.5em;
+  width: 6em;
+  margin-left: -3em;
+  border-radius: 40%;
+  background: #FA5B59;
+}
+

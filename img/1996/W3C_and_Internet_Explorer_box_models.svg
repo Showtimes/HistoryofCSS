@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.47pre2 " version="1.1" id="svg2816" height="414.15872" width="299" sodipodi:docname="W3C and Internet Explorer box models.svg">
+  <title id="title2851">Depiction of the W3C and Internet Explorer box models, and how a definition of width is interpreted by each.</title>
+  <defs id="defs2818">
+    <inkscape:perspective sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" id="perspective2824" />
+    <inkscape:perspective id="perspective2834" inkscape:persp3d-origin="0.5 : 0.33333333 : 1" inkscape:vp_z="1 : 0.5 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 0.5 : 1" sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#ffffff" borderopacity="0.0" inkscape:pageopacity="0.0" inkscape:pageshadow="0" inkscape:zoom="1.8929941" inkscape:cx="140.25539" inkscape:cy="207.07936" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1677" inkscape:window-height="1031" inkscape:window-x="1674" inkscape:window-y="-6" inkscape:window-maximized="1" />
+  <metadata id="metadata2821">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Depiction of the W3C and Internet Explorer box models, and how a definition of width is interpreted by each.</dc:title>
+        <dc:date>September 12, 2009</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Will Pittenger</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source>http://commons.wikimedia.org/wiki/File:W3C_and_Internet_Explorer_box_models.png</dc:source>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>W3C</rdf:li>
+            <rdf:li>Internet Explorer</rdf:li>
+            <rdf:li>IE</rdf:li>
+            <rdf:li>box model</rdf:li>
+            <rdf:li>content</rdf:li>
+            <rdf:li>padding</rdf:li>
+            <rdf:li>border</rdf:li>
+            <rdf:li>margin</rdf:li>
+            <rdf:li>width</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>Vectorized version of the source by Will Pittenger.  Created in Inkscape</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>&lt;a href=&quot;http://commons.wikimedia.org/w/index.php?title=User:Warren&amp;action=edit&amp;redlink=1&quot;&gt;Warren&lt;/a&gt;</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(1140.625,-86.0868)">
+    <g id="g3671">
+      <rect y="108.48719" x="-1139.625" height="190.6875" width="297" id="rect3618" style="fill:#dce6f2;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.00000002, 2.00000002;stroke-dashoffset:0" />
+      <rect y="129.01843" x="-1117.9688" height="149.625" width="253.6875" id="rect3616" style="fill:#ebf1de;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+      <rect y="151.51843" x="-1096.0312" height="104.625" width="209.8125" id="rect3614" style="fill:#d9d9d9;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+      <g id="g3668">
+        <rect style="fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:none" id="rect2840" width="164.25" height="59.625" x="-1073.25" y="174.01843" ry="0" />
+      </g>
+      <text sodipodi:linespacing="100%" id="text3628" y="185.17468" x="-1070.875" style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman" xml:space="preserve"><tspan y="185.17468" x="-1070.875" id="tspan3630" sodipodi:role="line">Content</tspan></text>
+      <text sodipodi:linespacing="100%" id="text3632" y="163.04968" x="-1093" style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman" xml:space="preserve"><tspan y="163.04968" x="-1093" id="tspan3634" sodipodi:role="line">Padding</tspan></text>
+      <text sodipodi:linespacing="100%" id="text3636" y="140.29968" x="-1116.3125" style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman" xml:space="preserve"><tspan y="140.29968" x="-1116.3125" id="tspan3638" sodipodi:role="line">Border</tspan></text>
+      <text sodipodi:linespacing="100%" id="text3640" y="120.36218" x="-1136.5625" style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman" xml:space="preserve"><tspan y="120.36218" x="-1136.5625" id="tspan3642" sodipodi:role="line">Margin</tspan></text>
+    </g>
+    <use x="0" y="0" xlink:href="#g3671" id="use3704" transform="matrix(0.64744,0,0,0.64744,-349.43103,286.86264)" width="744.09448" height="1052.3622" />
+    <path style="fill:none;stroke:#0000fe;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.00000001, 2.00000001;stroke-dashoffset:0" d="m -1072.7466,220.59662 0,273.44022" id="path3700" />
+    <path style="fill:none;stroke:#0000fe;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2, 2;stroke-dashoffset:0" d="m -909.5,220.59554 0,273.5958" id="path3702" />
+    <g id="g4652">
+      <path id="path3706" d="m -1070.2137,220.61219 153.1149,0" style="fill:none;stroke:#0000fe;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path transform="translate(-2,6.7500072)" d="m -1070.7548,213.86218 9.7572,-5.63332 0,11.26665 -9.7572,-5.63333 z" inkscape:randomized="0" inkscape:rounded="0" inkscape:flatsided="true" sodipodi:arg2="4.1887902" sodipodi:arg1="3.1415927" sodipodi:r2="3.2524028" sodipodi:r1="6.504806" sodipodi:cy="213.86218" sodipodi:cx="-1064.25" sodipodi:sides="3" id="path4644" style="fill:#0000fe;fill-opacity:1;fill-rule:evenodd;stroke:none" sodipodi:type="star" />
+      <use height="1052.3622" width="744.09448" transform="matrix(-1,0,0,1,-1982.7492,0)" id="use4646" xlink:href="#path4644" y="0" x="0" />
+      <text sodipodi:linespacing="100%" id="text4648" y="217.93445" x="-1008.459" style="font-size:13px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;color:black;fill:#0000fe;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman" xml:space="preserve"><tspan y="217.93445" x="-1008.459" id="tspan4650" sodipodi:role="line">width</tspan></text>
+    </g>
+    <use x="0" y="0" xlink:href="#g4652" id="use4659" transform="translate(0,274)" width="744.09448" height="1052.3622" />
+    <text xml:space="preserve" style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman" x="-1063.7529" y="101.36219" id="text4661" sodipodi:linespacing="100%"><tspan sodipodi:role="line" id="tspan4663" x="-1063.7529" y="101.36219">W3C box model</tspan></text>
+    <text xml:space="preserve" style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Times New Roman;-inkscape-font-specification:Times New Roman" x="-1116.1104" y="349.36218" id="text4665" sodipodi:linespacing="100%"><tspan sodipodi:role="line" id="tspan4667" x="-1116.1104" y="349.36218">Internet Explorer box model</tspan></text>
+  </g>
+</svg>
